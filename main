@@ -1,0 +1,6 @@
+from segno import helpers
+
+qrcode = helpers.make_wifi(ssid='deneme', password='12345678', security='WPA')
+qrcode.designator
+'3-M'
+qrcode.save('wifi-access.png', scale=10)
